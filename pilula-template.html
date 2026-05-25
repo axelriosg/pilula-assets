@@ -1,0 +1,35 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@page{size:A4;margin:6cm 2cm 2.6cm 2cm;@bottom-right{content:"Página " counter(page);font-family:'DejaVu Sans',sans-serif;font-size:9px;color:#666}}
+body{font-family:'DejaVu Sans','Segoe UI',sans-serif;color:#2C2C2C;margin:0}
+.wave-top{position:fixed;top:0;left:0;width:100%;height:70px}
+.wave-bot{position:fixed;bottom:0;left:0;width:100%;height:50px}
+.header{position:fixed;top:18px;left:0;width:100%;display:flex;justify-content:space-between;align-items:flex-start;padding:0 56px;box-sizing:border-box}
+.header img{width:200px;height:auto}
+.contact{font-size:9px;color:#2C2C2C;line-height:1.7;text-align:left}
+.label{text-align:center;font-weight:bold;font-size:11px;color:#1A1A1A}
+.rule{border:none;border-top:.5px solid #D5D5D5;margin:8px 0 14px}
+h1{font-size:14px;color:#1A1A1A;margin:0 0 4px}
+.sub{font-style:italic;font-size:10px;color:#666;margin:0 0 14px}
+.sec{font-weight:bold;font-size:12px;color:#1A1A1A;margin:14px 0 8px}
+.sec::first-letter{color:#3B9AD9}
+.para{font-size:10.5px;line-height:1.48;text-align:justify;margin:0 0 8px}
+.bul,.chk{font-size:10.5px;line-height:1.48;text-align:justify;margin:0 0 6px;padding-left:14px}
+.refhead{font-weight:bold;font-size:10px;color:#1A1A1A;margin:14px 0 6px}
+.ref{font-size:8.5px;line-height:1.4;text-align:justify;color:#2C2C2C;margin:0 0 6px}
+</style></head>
+<body>
+<svg class="wave-top" viewBox="0 0 800 70" preserveAspectRatio="none"><path d="M0,30 Q200,55 400,30 T800,30 L800,0 L0,0 Z" fill="#3B9AD9"/><path d="M0,40 Q200,15 400,40 T800,40 L800,0 L0,0 Z" fill="#A8D5F0" opacity=".7"/></svg>
+<svg class="wave-bot" viewBox="0 0 800 50" preserveAspectRatio="none"><path d="M0,20 Q200,-5 400,20 T800,20 L800,50 L0,50 Z" fill="#3B9AD9"/></svg>
+<div class="header">
+<img src="https://raw.githubusercontent.com/axelriosg/pilula-assets/main/dr-matheus-logo-final.png" alt="Dr. Matheus Trilico">
+<div class="contact">📧 atendimento@matheustriliconeurologia.com.br<br>📷 @drmatheustriliconeurologia<br>📘 /matheustriliconeurologia</div>
+</div>
+<div class="label">💊 "Pílulas de Conhecimento"</div>
+<hr class="rule">
+<h1>{{TITULO}}</h1>
+<p class="sub">{{SUBTITULO}}</p>
+{{BODY}}
+<div class="refhead">Referências</div>
+{{REFS}}
+</body></html>
